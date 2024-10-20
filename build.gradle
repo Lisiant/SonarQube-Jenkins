@@ -42,11 +42,16 @@ dependencies {
 
 	implementation 'org.modelmapper:modelmapper:2.4.0'
 
+	// Spring Boot Actuator - 취약한 버전
+	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.0.0.RELEASE'
+	// Jackson Databind - 취약한 버전
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.6'
 
-	// Apache Commons Compress의 취약한 버전
-	implementation 'org.apache.commons:commons-compress:1.18'
-	implementation 'org.bouncycastle:bcprov-jdk15on:1.64'
+	// Spring Security - 취약한 버전
+	implementation 'org.springframework.security:spring-security-core:5.2.0.RELEASE'
 
+	// Tomcat Embed - 취약한 버전
+	implementation 'org.apache.tomcat.embed:tomcat-embed-core:9.0.0.M1'
 }
 
 tasks.named('test') {
